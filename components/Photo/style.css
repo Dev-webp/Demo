@@ -99,7 +99,7 @@
   .photo-wrapper .nav .collection {
     flex: 1;
     margin-right: 30px;
-    margin-left: 60px;
+    margin-left: 30px;
     font-size: 10px;
     cursor: pointer;
     transition: text-shadow 0.3s ease; /* Smooth transition effect */
