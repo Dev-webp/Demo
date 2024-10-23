@@ -1,0 +1,370 @@
+@font-face {
+    font-family: 'Raiderfont';
+    src: local('Raiderfont'), url('./fonts/Raiderfont.ttf') format('truetype');
+  }
+  
+  .photo-wrapper * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* Hide scrollbar but keep scroll functionality */
+  html {
+    overflow: -moz-scrollbars-none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer and Edge */
+  }
+
+  html::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+  }
+
+  html, body, .photo-wrapper {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .photo-wrapper {
+    font-family: 'Montserrat';
+    font-size: 12px;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .photo-wrapper ul {
+    list-style: none;
+  }
+  
+  .photo-wrapper .left,
+  .photo-wrapper .right {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    z-index: 1;
+  }
+  
+  .photo-wrapper .left {
+    /* background: #B3B4AF; */
+    /* background: #fdd274; */
+    /* background: #ff9500; */
+    background: #f5821f;
+    left: 0%;
+    width: 0%;
+  }
+  
+  .photo-wrapper .right {
+    /* background: #191921; */
+    background: white;
+    right: 0%;
+    width: 100%;
+    pointer-events: none;
+  }
+
+  .photo-wrapper .nav {
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .photo-wrapper .nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    padding: 0 20px;
+  }
+  
+  .photo-wrapper .nav ul li {
+    display: inline-block;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 8px;
+    font-weight: 600;
+    padding: 0 30px;
+  }
+  
+  .photo-wrapper .nav .logo {
+    flex: 1;
+    font-size: 18px;
+    letter-spacing: 0;
+  }
+  
+  .photo-wrapper .nav .menu {
+    flex: 1;
+    font-size: 18px;
+  }
+
+  
+  .photo-wrapper .nav .collection {
+    flex: 1;
+    margin-right: 30px;
+    margin-left: 60px;
+    font-size: 10px;
+    cursor: pointer;
+    transition: text-shadow 0.3s ease; /* Smooth transition effect */
+  }
+  
+  .photo-wrapper .nav .collection:hover {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Lighter shadow */
+  }
+  
+  
+  .photo-wrapper .nav .explore {
+    flex: 1;
+    margin-right: 30px;
+    font-size: 10px;
+    cursor: pointer;
+    transition: text-shadow 0.3s ease; /* Smooth transition effect */
+  }
+  
+  .photo-wrapper .nav .explore:hover {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Lighter shadow */
+  }
+  
+  .photo-wrapper .nav .search {
+    flex: 1;
+    margin-right: 30px;
+    color: #000;
+    font-size: 10px;
+    cursor: pointer;
+    transition: text-shadow 0.3s ease; 
+  }
+  .photo-wrapper .nav .search:hover {
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.9); /* Lighter shadow */
+  }
+
+  .photo-wrapper .nav .work {
+    /* flex: 1; */
+    margin-right: 30px;
+    color: #000;
+    font-size: 10px;
+    cursor: pointer;
+    transition: text-shadow 0.3s ease; 
+  }
+  .photo-wrapper .nav .work:hover {
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.9); /* Lighter shadow */
+  }
+
+  .photo-wrapper .nav .immi {
+    /* flex: 1; */
+    color: #000;
+    font-size: 10px;
+    cursor: pointer;
+    transition: text-shadow 0.3s ease; 
+  }
+  .photo-wrapper .nav .immi:hover {
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.9); /* Lighter shadow */
+  }
+
+
+
+/* Animation for input focus */
+.photo-wrapper .contact-form input:focus {
+  border-color: #ffa11e; /* Change border color on focus */
+  transition: border-color 0.3s ease; /* Smooth transition */
+  box-shadow: 0 0 5px rgba(255, 178, 71, 0.5); /* Glow effect */
+}
+
+/* Navigation link hover effect */
+.photo-wrapper .nav ul li:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+  /* Add these styles to your existing CSS */
+
+  .photo-wrapper  .contact-form {
+    position: absolute;
+    z-index: 9999;
+    top: 48%;
+    left: 35px; /* Adjust as needed */
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+    padding: 60px 120px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    pointer-events: auto; 
+  }
+  
+  .photo-wrapper .contact-form h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #333;
+    text-transform: uppercase;
+  }
+
+  .photo-wrapper .contact-form input{
+    font-family: 'Montserrat';
+    pointer-events: auto; 
+  }
+
+  .photo-wrapper .contact-form .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Adjust the gap between rows */
+  }
+  
+  .photo-wrapper .contact-form .input-row {
+    display: flex;
+    gap: 20px; /* Space between inputs in the row */
+  }
+  
+  .photo-wrapper  .contact-form .input-row input {
+    flex: 1; /* Ensure both inputs in the row take equal space */
+  }
+  
+  .photo-wrapper .contact-form .input-full input {
+    width: 100%; /* The message input will take the full row */
+  }
+  
+  .photo-wrapper .contact-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .photo-wrapper .contact-form button {
+    margin-top: 30px;
+    padding: 10px 15px;
+    background: #000000;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    pointer-events: auto; 
+  }
+  
+  .photo-wrapper .contact-form button:hover {
+    background: #484848;
+  }
+  
+  /* For mobile screens, stack inputs vertically */
+  @media (max-width: 768px) {
+    .photo-wrapper .contact-form .input-row {
+      flex-direction: column;
+      width: 200px;
+    }
+  }
+  
+  
+  .photo-wrapper .info {
+    position: absolute;
+    bottom: 0;
+    left: 180px;
+    background: rgba(0, 0, 0, .8);
+    padding: 0 10px;
+    z-index: 1;
+  }
+  
+  .photo-wrapper .info ul li {
+    display: inline-block;
+    padding: 20px 25px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 8px;
+    font-weight: 600;
+  }
+  
+  .photo-wrapper .info i {
+    font-size: 18px;
+  }
+
+  
+  .photo-wrapper .text h1 {
+    font-size: 90px;
+    color: #000;
+    font-family: 'Raiderfont';
+    text-transform: uppercase;
+  }
+  
+  .photo-wrapper .text p {
+    font-size: 20px;
+    color: #000;
+    font-family: monospace;
+  }
+  
+  .photo-wrapper .text {
+    position: absolute;
+    top: 50%;
+    right: 60px;
+    transform: translateY(-50%);
+    z-index: 10; /* Ensure it is above other content */
+  }
+  
+  .photo-wrapper  .name {
+    position: absolute;
+    top: 85%;
+    left: -270px;
+    transform: translateY(-50%);
+    font-size: 90px;
+    font-family: 'Raiderfont';
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 2px #555555;
+    z-index: 10; /* Ensure it is above other content */
+  }
+  
+  
+  .photo-wrapper .bottomnav {
+    position: absolute;
+    bottom: 100px;
+    right: 100px;
+    z-index: 1;
+  }
+  
+  .photo-wrapper .bottomnav ul li {
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    margin-top: 20px;
+  }
+  
+  .photo-wrapper  .bottomnav ul li:nth-child(2) {
+    font-weight: bolder;
+  }
+  
+  .photo-wrapper  .bottomnav ul li:nth-child(2)::before {
+    content: "";
+    display: inline-block;
+    border: 1px solid #000;
+    width: 65px;
+    margin: 0 10px 0 -78px;
+    transform: translateY(-3px);
+  }
+
+  /* Add this to your existing CSS */
+
+/* General styles for mobile screens */
+@media (max-width: 768px) {
+  .photo-wrapper .right,
+  .photo-wrapper .nav,
+  .photo-wrapper .content,
+  .photo-wrapper .info,
+  .photo-wrapper .text,
+  .photo-wrapper .name,
+  .photo-wrapper .bottomnav {
+    display: none; /* Hide these elements */
+  }
+
+  .photo-wrapper .left {
+    background: #fff;
+    width: 100%;
+    height: 100%;
+  }
+
+  .photo-wrapper .contact-form {
+    display: block; /* Ensure contact form is displayed */
+    position: absolute;
+    z-index: 9999;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust transform for perfect centering */
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+}
