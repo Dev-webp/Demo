@@ -81,7 +81,6 @@ export const SparklesCore = (props: ParticlesProps) => {
                   enable: false,
                   mode: "repulse",
                 },
-                resize: true as any, // Changed from 'true as any' to just 'true'
               },
               modes: {
                 push: {
@@ -263,10 +262,8 @@ export const SparklesCore = (props: ParticlesProps) => {
                 },
               },
               shape: {
-                close: true,
-                fill: true,
-                options: {},
-                type: "circle",
+                type: ["circle"], // Use array format for single type
+                options: {}, // Add options if needed
               },
               size: {
                 value: {
@@ -427,6 +424,9 @@ export const SparklesCore = (props: ParticlesProps) => {
               },
             },
             detectRetina: true,
+            pauseOnBlur: true,
+            pauseOnOutsideViewport: true,
+            responsive: [],
           }}
         />
       )}
