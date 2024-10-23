@@ -3,6 +3,11 @@ import Image from "next/image";
 import React, { useState } from "react";
 import { cn } from "@/lib/utils";
 
+type CardType = {
+  title: string;
+  src: string;
+};
+
 export const Card = React.memo(
   ({
     card,
@@ -10,7 +15,7 @@ export const Card = React.memo(
     hovered,
     setHovered,
   }: {
-    card: any;
+    card: CardType; // Changed 'any' to 'CardType'
     index: number;
     hovered: number | null;
     setHovered: React.Dispatch<React.SetStateAction<number | null>>;
@@ -35,12 +40,9 @@ export const Card = React.memo(
           hovered === index ? "opacity-100" : "opacity-0"
         )}
       >
-       <div
-  className="flex items-center justify-center text-xl md:text-2xl font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-200 h-full"
->
-  {card.title}
-</div>
-
+        <div className="flex items-center justify-center text-xl md:text-2xl font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-200 h-full">
+          {card.title}
+        </div>
       </div>
     </div>
   )
@@ -48,12 +50,7 @@ export const Card = React.memo(
 
 Card.displayName = "Card";
 
-type Card = {
-  title: string;
-  src: string;
-};
-
-export function FocusCards({ cards }: { cards: Card[] }) {
+export function FocusCards({ cards }: { cards: CardType[] }) { // Use 'CardType' here as well
   const [hovered, setHovered] = useState<number | null>(null);
 
   return (

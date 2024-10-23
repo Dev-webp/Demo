@@ -3,7 +3,6 @@ import React, { useEffect } from 'react';
 import { gsap, Power2, Power3, Circ, Expo, TimelineMax } from 'gsap';
 import './style.css';
 import { Input } from "@/components/ui/input";
-import Autocomplete from "@/components/ui/autocomplete";
 
 const PhotographerPortfolio = () => {
   useEffect(() => {

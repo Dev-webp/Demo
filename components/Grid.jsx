@@ -13,51 +13,47 @@ import {
 export default function FeaturesSectionDemo() {
   const features = [
     {
-      title: "Built for developers",
-      description:
-        "Built for engineers, developers, dreamers, thinkers and doers.",
+      title: "Expert Guidance",
+      description: "Our team of experts will guide you through every step of the visa application process.",
       icon: <IconTerminal2 />,
     },
     {
-      title: "Ease of use",
-      description:
-        "It's as easy as using an Apple, and as expensive as buying one.",
+      title: "User-Friendly Process",
+      description: "Navigating the visa process is simple and straightforward with our resources.",
       icon: <IconEaseInOut />,
     },
     {
-      title: "Pricing like no other",
-      description:
-        "Our prices are best in the market. No cap, no lock, no credit card required.",
+      title: "Affordable Pricing",
+      description: "Our consultation fees are competitive, with no hidden costs or obligations.",
       icon: <IconCurrencyDollar />,
     },
     {
-      title: "100% Uptime guarantee",
-      description: "We just cannot be taken down by anyone.",
+      title: "Guaranteed Success",
+      description: "We provide thorough support to maximize your chances of visa approval.",
       icon: <IconCloud />,
     },
     {
-      title: "Multi-tenant Architecture",
-      description: "You can simply share passwords instead of buying new seats",
+      title: "Tailored Solutions",
+      description: "We understand that every case is unique; our services are customized to your needs.",
       icon: <IconRouteAltLeft />,
     },
     {
-      title: "24/7 Customer Support",
-      description:
-        "We are available a 100% of the time. Atleast our AI Agents are.",
+      title: "Dedicated Support",
+      description: "Our team is available around the clock to assist you with any inquiries.",
       icon: <IconHelp />,
     },
     {
-      title: "Money back guarantee",
-      description:
-        "If you donot like EveryAI, we will convince you to like us.",
+      title: "Satisfaction Guarantee",
+      description: "If you're not satisfied with our services, we'll work to make it right.",
       icon: <IconAdjustmentsBolt />,
     },
     {
-      title: "And everything else",
-      description: "I just ran out of copy ideas. Accept my sincere apologies",
+      title: "Comprehensive Resources",
+      description: "From guides to personal consultations, we provide everything you need for your journey.",
       icon: <IconHeart />,
     },
   ];
+  
   return (
     (<div
       className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  relative z-10 py-10 max-w-7xl mx-auto">

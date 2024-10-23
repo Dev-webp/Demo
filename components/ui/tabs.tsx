@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 type Tab = {
   title: string;
   value: string;
-  content?: string | React.ReactNode | any;
+  content?: string | React.ReactNode; // Removed 'any'
 };
 
 export const Tabs = ({
@@ -88,17 +88,18 @@ export const Tabs = ({
 export const FadeInDiv = ({
   className,
   tabs,
+  active,
   hovering,
 }: {
   className?: string;
-  key?: string;
   tabs: Tab[];
-  active: Tab;
+  active: Tab; // Specify active tab type
   hovering?: boolean;
 }) => {
   const isActive = (tab: Tab) => {
-    return tab.value === tabs[0].value;
+    return tab.value === active.value; // Compare with active prop
   };
+  
   return (
     <div className="relative w-full h-full">
       {tabs.map((tab, idx) => (

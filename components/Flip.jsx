@@ -7,7 +7,7 @@ export default function FlipWordsDemo() {
   return (
     (<div className="h-[10rem] mt-44 flex justify-center items-center px-4">
       <div
-        className="text-4xl mx-auto font-normal text-neutral-600 dark:text-neutral-400">
+        className="text-6xl mx-auto font-normal text-neutral-600 dark:text-neutral-400">
         Build
         <FlipWords words={words} /> <br/>
         Future with VJC Overseas
