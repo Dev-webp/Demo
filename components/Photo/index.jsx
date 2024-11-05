@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 import { gsap, Power2, Power3, Circ, Expo, TimelineMax } from 'gsap';
 import './style.css';
 import { Input } from "@/components/ui/input";
+import Image from 'next/image';
 
 const PhotographerPortfolio = () => {
   useEffect(() => {
@@ -93,7 +94,7 @@ const PhotographerPortfolio = () => {
       </div>
       <div className="right"></div>
 
-      <nav className="nav">
+      {/* <nav className="nav">
         <ul>
           <li className="logo">VJCOverseas</li>
           <li className="menu">
@@ -105,13 +106,33 @@ const PhotographerPortfolio = () => {
           <li className="work">work-abroad</li>
           <li className="immi">Immigration</li>
         </ul>
-      </nav>
+      </nav> */}
+      <nav className="nav">
+  <ul>
+    <li className="logo">
+    <Image 
+        src="/logo-1.png" 
+        alt="VJC Overseas Logo" 
+        width={80} 
+        height={100} 
+      />
+       <Image 
+        src="/logo-2.png" 
+        alt="VJC Overseas Logo" 
+        width={150} 
+        height={100} 
+      />
+    </li>
+   
+  </ul>
+</nav>
 
       <div className="content">
         <div className="info">
           <ul>
-            <li>vjcbangalore@gmail.com</li>
-            <li>info@vjcoverseas.com</li>
+            
+          <li> <a href="mailto:vjcbangalore@gmail.com">vjcbangalore@gmail.com</a> </li>
+            <li> <a href="mailto:info@vjcoverseas.com">info@vjcoverseas.com</a></li>
             <li>
               <i className="fa fa-share-alt"></i>
             </li>

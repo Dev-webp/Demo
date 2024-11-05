@@ -9,7 +9,7 @@ export default function TabsDemo() {
       title: "Product",
       value: "product",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white" style={{ backgroundColor: "#f5821f" }}>
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white" style={{ backgroundColor: "#a5a5a5" }}>
           <p>Product Tab</p>
           <DummyContent />
         </div>
@@ -19,7 +19,7 @@ export default function TabsDemo() {
       title: "Services",
       value: "services",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white" style={{ backgroundColor: "#f5821f" }}>
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white" style={{ backgroundColor: "#a5a5a5" }}>
           <p>Services Tab</p>
           <DummyContent />
         </div>
@@ -29,7 +29,7 @@ export default function TabsDemo() {
       title: "Playground",
       value: "playground",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white" style={{ backgroundColor: "#f5821f" }}>
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white" style={{ backgroundColor: "#a5a5a5" }}>
           <p>Playground Tab</p>
           <DummyContent />
         </div>
@@ -39,7 +39,7 @@ export default function TabsDemo() {
       title: "Content",
       value: "content",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white" style={{ backgroundColor: "#f5821f" }}>
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white" style={{ backgroundColor: "#a5a5a5" }}>
           <p>Content Tab</p>
           <DummyContent />
         </div>
@@ -49,7 +49,7 @@ export default function TabsDemo() {
       title: "Random",
       value: "random",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white" style={{ backgroundColor: "#f5821f" }}>
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white" style={{ backgroundColor: "#a5a5a5" }}>
           <p>Random Tab</p>
           <DummyContent />
         </div>

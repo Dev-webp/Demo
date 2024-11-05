@@ -8,36 +8,36 @@ import {
   IconHome,
   IconNewSection,
   IconTerminal2,
+  IconBrandWhatsapp,
+  IconBrandInstagram,
+  IconBrandTwitter,
+  IconBrandYoutube,
+  IconBrandFacebook,
+  IconBrandLinkedin,
 } from "@tabler/icons-react";
 
 export default function FloatingDockDemo() {
   const links = [
-    {
-      title: "Home",
-      icon: (
-        <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
-    },
+    
 
     {
-      title: "Products",
+      title: "Whatsapp",
       icon: (
-        <IconTerminal2 className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconBrandWhatsapp className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
       href: "#",
     },
     {
-      title: "Components",
+      title: "Instagram",
       icon: (
-        <IconNewSection className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconBrandInstagram className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "https://www.instagram.com/vjc_overseas_bangalore/?utm_source=qr&igsh=MXZzNXY3dGV1YXg1bw%3D%3D",
     },
     {
-      title: "Changelog",
+      title: "LinkedIn",
       icon: (
-        <IconExchange className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconBrandLinkedin className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
       href: "#",
     },
@@ -50,9 +50,16 @@ export default function FloatingDockDemo() {
       href: "#",
     },
     {
-      title: "GitHub",
+      title: "Youtube",
       icon: (
-        <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconBrandYoutube className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      ),
+      href: "#",
+    },
+    {
+      title: "Facebook",
+      icon: (
+        <IconBrandFacebook className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
       href: "#",
     },
