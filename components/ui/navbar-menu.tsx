@@ -110,11 +110,20 @@ export const ProductItem = ({
   );
 };
 
-export const HoveredLink = ({ children, ...rest }: any) => {
+export const HoveredLink = ({
+  children,
+  href,
+  ...rest
+}: {
+  children: React.ReactNode;
+  href: string;
+  [key: string]: any; // Optional: allows additional props
+}) => {
   return (
     <Link
+      href={href} // Ensure href is passed
       {...rest}
-      className="text-neutral-700 dark:text-neutral-200 hover:text-black "
+      className="text-neutral-700 dark:text-neutral-200 hover:text-black"
     >
       {children}
     </Link>

@@ -16,9 +16,6 @@ const Parallax = dynamic(() => import('@/components/Parallax'), { ssr: false });
 const Tabs = dynamic(() => import('@/components/Tabs'), { ssr: false });
 const ScrollDown = dynamic(() => import('@/components/ScrollDown'), { ssr: false });
 const Highlight = dynamic(() => import('@/components/Highlight'), { ssr: false });
-const Nav = dynamic(() => import('@/components/Nav'), { ssr: false });
-const Scroll = dynamic(() => import("@/components/Scroll"), { ssr: false });
-import { AppleCardsCarouselDemo } from '@/components/Carousel';
 
 export default function Home() {
   return (
@@ -44,7 +41,7 @@ export default function Home() {
      <Flip/>
      <Highlight/>
      {/* <Scroll/> */}
-     <AppleCardsCarouselDemo/>
+     {/* <AppleCardsCarouselDemo/> */}
    </>
   );
 }
