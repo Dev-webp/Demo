@@ -1,3 +1,4 @@
+import { AppleCardsCarouselDemo } from '@/components/Carousel';
 import dynamic from 'next/dynamic';
 
 // Dynamically import components
@@ -41,7 +42,7 @@ export default function Home() {
      <Flip/>
      <Highlight/>
      {/* <Scroll/> */}
-     {/* <AppleCardsCarouselDemo/> */}
+     <AppleCardsCarouselDemo/>
    </>
   );
 }

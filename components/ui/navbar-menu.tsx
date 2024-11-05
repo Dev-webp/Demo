@@ -117,8 +117,7 @@ export const HoveredLink = ({
 }: {
   children: React.ReactNode;
   href: string;
-  [key: string]: any; // Optional: allows additional props
-}) => {
+} & React.AnchorHTMLAttributes<HTMLAnchorElement>) => {
   return (
     <Link
       href={href} // Ensure href is passed

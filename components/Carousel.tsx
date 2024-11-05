@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import React from "react";
 import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
 
@@ -18,28 +17,28 @@ export function AppleCardsCarouselDemo() {
   );
 }
 
-const DummyContent = () => {
-  return (
-    <>
-      {[...new Array(1).fill(1)].map((_, index) => {
-        return (
-          <div
-            key={"dummy-content" + index}
-            className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4"
-          >
-            <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
-              <span className="font-bold text-neutral-700 dark:text-neutral-200">
-                The first rule
-              </span>{" "}
-              Keep a journal, quickly jot down a grocery list, and take amazing
-              class notes.
-            </p>
-          </div>
-        );
-      })}
-    </>
-  );
-};
+// const DummyContent = () => {
+//   return (
+//     <>
+//       {[...new Array(1).fill(1)].map((_, index) => {
+//         return (
+//           <div
+//             key={"dummy-content" + index}
+//             className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4"
+//           >
+//             <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
+//               <span className="font-bold text-neutral-700 dark:text-neutral-200">
+//                 The first rule
+//               </span>{" "}
+//               Keep a journal, quickly jot down a grocery list, and take amazing
+//               class notes.
+//             </p>
+//           </div>
+//         );
+//       })}
+//     </>
+//   );
+// };
 
 const data = [
     {
@@ -58,7 +57,7 @@ const data = [
     {
       category: "Work Visas",
       title: "Find the Right Work Visa for You.",
-      src: "/wrvisa.jpg",
+      src: "/immi.jpg",
       content: (
         <ul className="space-y-1 list-disc list-inside text-base text-neutral-700 dark:text-neutral-300 ml-10">
           <li className="font-semibold">Visa application help</li>
